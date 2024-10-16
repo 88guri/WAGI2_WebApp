@@ -1,0 +1,135 @@
+/* Attendance page CSS */
+body {
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#page-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#central-box {
+    background-color: #fff;
+    width: 80%;
+    max-width: 1200px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#attendance-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr auto;
+    grid-template-rows: repeat(15, auto);
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.date-box {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    height: 80px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.attendance-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.attendance-image img {
+    max-height: 60px;
+    max-width: 60px;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    #central-box {
+        width: 95%;
+        padding: 10px;
+    }
+
+    #attendance-container {
+        grid-template-columns: 1fr auto;
+        grid-template-rows: repeat(30, auto);
+    }
+}
+
+/* General Styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+header img {
+    height: 40px;
+}
+
+#main-navigation .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+#main-navigation .menu-item a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Slide-out Menu for Mobile */
+.slide {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #category_button {
+        display: block;
+    }
+    
+    #main-navigation {
+        display: none;
+    }
+
+    .slide {
+        display: block;
+        background-color: #333;
+        color: #fff;
+    }
+
+    .slide ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .slide ul li {
+        padding: 10px;
+    }
+}

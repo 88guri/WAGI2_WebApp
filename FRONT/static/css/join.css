@@ -1,0 +1,30 @@
+#join-section{
+    text-align: center;
+    padding-top: 80px;
+
+}
+#join-form > input{
+    width: 319px;
+    height: 48px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    
+}
+
+#join-form > input[type="submit"]{
+    color: #ffffff;
+    font-size: 16px;
+    background-color: #C0CCFF;
+    border-radius: 20px;
+    margin-top: 20px;
+    width:100px;
+    height:37px;
+}
+
+#join-form input::placeholder
+{
+    color: #C0CCFF;
+}

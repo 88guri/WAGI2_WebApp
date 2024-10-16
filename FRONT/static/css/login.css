@@ -1,0 +1,50 @@
+.login-wrapper{
+    width: 400px;
+    height: 350px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+#login-form{
+    text-align: center;
+    color: #C0CCFF;
+}
+
+
+#login-section {
+    padding-top: 80px;
+    color: #C0CCFF;
+
+}
+
+#login-form input[type="id"]::placeholder,
+#login-form input[type="password"]::placeholder {
+    color: #C0CCFF;
+}
+
+#login-form > input{
+    width: 319px;
+    height: 48px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    border-radius: 20px;
+    background-color: #F8F8F8;
+}
+
+#login-form > input[type="submit"]{
+    color: #fff;
+    font-size: 16px;
+    background-color: #C0CCFF;
+    border-radius: 20px;
+    margin-top: 20px;
+    width:100px;
+    height:37px;
+    
+}
+
+#join{
+    font-size: 12px;
+    margin-right: 280px;
+}
+    

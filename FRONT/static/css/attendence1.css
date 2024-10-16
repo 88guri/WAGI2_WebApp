@@ -1,0 +1,115 @@
+/* Base styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+#page-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100vh - 150px); /* Full height minus header and footer */
+    padding: 20px;
+}
+
+
+
+/* Positioning the "attendance" heading */
+
+
+h2{
+    
+    padding-top:-50px;
+}
+
+/* Attendance box styles */
+#attendance-box {
+    background-color: #A9A9F5; /* Light purple background */
+    border-radius: 15px;
+   
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 60px; /* Adjust the margin to account for the space above */
+    
+    width:328px;
+    height:229px;
+}
+
+
+#attendance-inbox {
+margin-left: 35px;
+background-color: #ffffff;
+opacity:55%;
+width:239px;
+height:86px;
+border-radius:15px;
+text-align:center;
+margin-top:-70px;
+padding:10px;
+
+
+
+}
+#babywagi-icon img {
+    width: 181px;
+    height:181px;
+    margin-bottom: 30px;
+    margin-top:-100px;
+}
+
+/* User information styles */
+#user-info p {
+    margin: 10px 0;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Attendance button styling */
+#attendance-button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top:-100px;
+}
+
+
+
+/* Footer styles */
+footer {
+    background-color: #151515;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer img {
+    height: 30px;
+}
+
+footer p {
+    color: #fff;
+    font-size: 14px;
+    margin: 10px 0 5px;
+}
+#ooo{
+    
+    
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    
+
+}

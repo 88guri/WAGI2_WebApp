@@ -1,0 +1,125 @@
+/* Base styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+#page-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100vh - 150px); /* Full height minus header and footer */
+    padding: 20px;
+}
+
+/* Positioning the "attendance" heading */
+h2 {
+    margin-top: -50px; /* Adjust the position upwards if needed */
+}
+
+/* Attendance box styles */
+#attendance-box {
+    background-color: #A9A9F5; /* Light purple background */
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 60px; /* Adjust the margin to account for the space above */
+    width: 328px;
+    height: 229px;
+}
+
+#attendance-inbox {
+    position: absolute;
+    top: 165px;
+    margin-left: 35px;
+    background-color: #ffffff;
+    opacity: 0.55; /* Opacity must be a value between 0 and 1 */
+    width: 239px;
+    height: 86px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px;
+}
+
+#babywagi-icon img {
+    width: 181px;
+    height: 181px;
+    margin-bottom: 30px;
+    margin-top: -100px;
+}
+
+/* User information styles */
+#user-info p {
+    margin: 10px 0;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Attendance button styling */
+#attendance-button:hover {
+    background-color: #ddd;
+    text-align: center;
+    color: #A9A9F5;
+    width: 100px;
+    height: 37px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #151515;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer img {
+    height: 30px;
+}
+
+footer p {
+    color: #fff;
+    font-size: 14px;
+    margin: 10px 0 5px;
+}
+
+#right_star {
+    position: absolute;
+    top: 250px; /* 보라색 박스 안에서 위쪽에 배치 */
+    right: 10px;
+    width: 23px; /* 크기 조정 */
+    height: 23px;
+}
+
+/* left_star 스타일 */
+#left_star {
+    position: absolute;
+    top: 100px; /* 왼쪽에서 살짝 더 아래에 배치 */
+    left: 60px;
+    width: 19px; /* 크기 조정 */
+    height: 20px;
+}
+
+/* center_star 스타일 */
+#center_star {
+    position: absolute;
+    top: 70px; /* 상단 중앙에 배치 */
+    right: 65px;
+    transform: translateX(-50%);
+    width: 10px; /* 크기 조정 */
+    height: 10px;
+}
+
+#circle {
+    width: 115%;
+    height: 150%;
+    top: 0%;
+    left: -8%;
+    position: absolute;
+    z-index: -1;
+}
