@@ -1,3 +1,4 @@
+/* Base styles */
 @media (min-width: 450px){
     * { font-family: 'Spoqa Han Sans Neo', 'sans-serif'; }
     
@@ -197,6 +198,9 @@
     #main-header>a {
         margin-top: 30px;
     }
+    #main-header #back-button {
+        height: 20px;
+    }
     #main-header > a> img {
         width: 100px;
         margin-left: 30px;
@@ -204,14 +208,6 @@
         margin-bottom: 10px;
     }
     
-    #main-header>a {
-        margin: 13px;
-    }
-
-    #main-header #back-button {
-        height: 20px;
-    }
-
     nav {
         display: none;
     }
@@ -241,7 +237,18 @@
         text-align: center;
     }
     
-   
+    #main-footer {
+        background-color: #C0CCFF;
+        text-align: center;
+        color: white;
+        position: flex;
+        transform : translateY(0%);
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     
     #main-footer p {
         margin-bottom: 0;
@@ -305,65 +312,107 @@
         padding: 10px;
         padding-left: 50px;
     }
-}
-@media (max-width: 450px) {
-    
-    
-    #main-navigation ul {
-        list-style-type: none;
+
+    body {
+        font-family: 'Arial', sans-serif;
         margin: 0;
         padding: 0;
+        background-color: #000;
+        color: #fff;
+    }
+    
+    #page-wrapper {
         display: flex;
-        gap: 15px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: calc(100vh - 150px); /* Full height minus header and footer */
+        padding: 20px;
     }
     
-    #main-navigation ul li {
-        display: inline;
+    
+    
+    /* Positioning the "attendance" heading */
+    
+    
+    h2{
+        
+        padding-top:-50px;
     }
     
-    #main-navigation ul li a {
-        color: white;
-        text-decoration: none;
+    /* Attendance box styles */
+    #attendance-box {
+        background-color: #000000; /* Light purple background */
+        border-radius: 15px;
+       
+        text-align: center;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        margin-top: 60px; /* Adjust the margin to account for the space above */
+        
+        width:328px;
+        height:229px;
     }
     
-    #attendance-title {
-        position: absolute;
-        top: 50px; /* 헤더 바로 아래 위치 */
-        left: 15px;
-        color: white;
-        font-size: 18px;
+    
+    #attendance-inbox {
+    margin-left: 75px;
+    background-color: #ffffff;
+    opacity:55%;
+    width:150px;
+    height:50px;
+    border-radius:15px;
+    text-align:center;
+    margin-top:-40px;
+    padding:10px;
+    
+    
+    
+    }
+    #babywagi-icon img {
+        width: 181px;
+        height:181px;
+        margin-bottom: 150px;
+        margin-top:-280px;
+    }
+    
+    /* User information styles */
+    #user-info p {
+        margin: 10px 0;
+        color: #000;
         font-weight: bold;
     }
     
-    /* 페이지 전체 래퍼 */
-#page-wrapper {
-    display: flex;
-    flex-direction: column; /* 세로로 쌓기 */
-    min-height: 100vh;      /* 화면의 전체 높이 사용 */
-    align-items: center;
-}
-
-/* 메인 콘텐츠 영역 */
-#main-section {
-    flex: 1; /* 남은 공간을 차지하도록 설정 */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
-/* 푸터 */
-#main-footer {
-    background-color: #9EA9D7;
-    padding: 7px;
-    text-align: center;
-    color: white;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
+    /* Attendance button styling */
+    #attendance-button {
+        background-color: #fff;
+        color:#A9A9F5;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 25px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 20px;
+        font-size: 16px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-top:-100px;
+    }
     
+    
+    
+    /* Footer styles */
+    
+    #ooo{
+        
+        
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        top:100px;
+        
+    
+    }
+    
+    }
 
-}
+
+

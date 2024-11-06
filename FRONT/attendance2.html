@@ -6,12 +6,16 @@
     <title>WAGI WEB PAGE</title>
     <link rel="stylesheet" href="./static/css/attendance2.css">
     <link rel="stylesheet" href="./static/css/base.css">
-    <link rel="stylesheet" href="./attendence1.html">
+    
     <!--js-->
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 </head>
 <body>
     <header id="main-header">
+        <a href="javascript:history.back()">
+            <!-- <a href="/Wagi2_WebApp/FRONT/static/js/back_button.js"> -->
+                <img src="static/img/whiteBack.svg" alt="back" id="back-button">
+            </a>
         <a href="home.html">
             <img src="static/img/WAGI_logo_crop.png" alt="logo">
         </a>
@@ -37,6 +41,7 @@
         <!-- 모바일 전용 -->
     </header>
     <h2> &nbsp;&nbsp;✦&nbsp;attendance</h2>
+    
     <div id="page-wrapper">
         
         <div id="main-section">
@@ -49,7 +54,7 @@
                 <img src="./static/img/right_star.png" alt="" id="right_star">
                 <img src="./static/img/left_star.png" alt="" id="left_star">
                 <img src="./static/img/center_star.png" alt="" id="center_star">
-                <img src="./static/img/Group 88.png" alt="" id="circle">
+                <!--<img src="./static/img/Group 88 (1).png" alt="" id="circle">-->
 
                 <div id="user-info">
                     <div id="attendance-inbox">
@@ -70,6 +75,8 @@
     <footer id="main-footer">
         <img src="static/img/WAGI_black.png" alt="logo">
         <p>ⓒWAGI. 2024 All rights reserved</p>
+
+        <button id="login-button"><a href="login.html">LOGIN</a></button>
     </footer>
     <script src="static/js/menu_style.js"></script>
 </body>
