@@ -22,9 +22,9 @@
     #page-wrapper {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 120vh;
+        /*align-items: center;
+        justify-content: center;*/
+        height: 80vh;
     }
     
     #main-header {
@@ -62,15 +62,26 @@
         font-size: 20px;
         
     }
+    #attendance-inbox {
+        background-color: #ffffff;
+        opacity: 0.58;
+        width: 239px;
+        height: 85px;
+        border-radius: 20px;
+        text-align: center;
+        padding: 10px;
+        color: #A9A9F5;
+        
+    }
     
     #main-section {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        flex: 1;
+        position: relative;
+        top: 13px;
+        left: 0;
         display: flex;
-        
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 10px;
     }
 
 
@@ -154,6 +165,24 @@
         display:none;
     }
     
+    #user-info p{
+        
+        text-align: center;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 18.5;
+        
+         /* 간격 조정 */
+    }
+    #ooo{
+        font-weight: 600 bold;
+        font-size: 20px;
+        top:70px;
+        text-align: center;
+        margin-left:30px;
+
+
+    }
     }
     
 @media (max-width: 450px) {
@@ -177,10 +206,11 @@
     
     #page-wrapper {
         display: flex;
-        flex-direction: column;
-        align-items: center;
         justify-content: center;
-        height: 120vh;
+        align-items: center;
+        flex-direction: column;
+        height: 80vh; /* Full height minus header and footer */
+        padding: 10px;
     }
     
     #main-header {
@@ -196,13 +226,18 @@
     }
         
     #main-header>a {
-        margin-top: 30px;
+        margin-top: 13px;
+        margin-left:-30px;
     }
     #main-header > a> img {
         width: 100px;
         margin-left: 30px;
         max-height: 40px;
         margin-bottom: 10px;
+    }
+
+    #main-header #back-button {
+        height: 25px;
     }
     
     nav {
@@ -323,8 +358,8 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        height: calc(100vh - 150px); /* Full height minus header and footer */
-        padding: 20px;
+        height: 80vh; /* Full height minus header and footer */
+        padding: 10px;
     }
     
     
@@ -339,7 +374,8 @@
     
     /* Attendance box styles */
     #attendance-box {
-        background-color: #A9A9F5; /* Light purple background */
+        background-color: #C0CCFF;
+        /* Light purple background */
         border-radius: 15px;
        
         text-align: center;
@@ -352,14 +388,14 @@
     
     
     #attendance-inbox {
-    margin-left: 35px;
+    margin-left: 45px;
     background-color: #ffffff;
-    opacity:55%;
-    width:239px;
-    height:86px;
-    border-radius:15px;
+    opacity:58%;
+    width:219px;
+    height:66px;
+    border-radius:20px;
     text-align:center;
-    margin-top:-70px;
+    margin-top:20px;
     padding:10px;
     color:#A9A9F5;
     
@@ -374,15 +410,16 @@
     
     /* User information styles */
     #user-info p {
-        margin: 10px 0;
+        margin:1px;
         color: #000;
         font-weight: bold;
+        font-size: 14.5px;
     }
     
     /* Attendance button styling */
     #attendance-button {
         background-color: #fff;
-        color:#A9A9F5;
+        color:#C0CCFF;
         border: none;
         padding: 10px 20px;
         border-radius: 25px;
@@ -391,22 +428,24 @@
         margin-top: 20px;
         font-size: 16px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        margin-top:-100px;
+        margin-top:-80px;
     }
     
     
     
     /* Footer styles */
-    
-    #ooo{
-        
-        
-        display: flex;
+    #ooo {
+        color:#000;
+        font-size: 20px;
         align-items: center;
+        font-weight: bold;
         margin: 0 auto;
-        
-    
+        margin-top: -50px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;/* 위로 올리기 위한 음수 값 추가 */
     }
+    
     
     }
 
