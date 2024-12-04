@@ -413,7 +413,6 @@
         width: 328px;
         height: 229px;
     }
-    
     #attendance-button {
         background-color: #fff;
         color:#C0CCFF;
@@ -477,6 +476,7 @@
         
     
     }
+   
 
     /* Attendance button styling */
     #attendance-button:hover {
