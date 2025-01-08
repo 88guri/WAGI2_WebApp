@@ -415,7 +415,10 @@
     }
     
     #attendance-button {
+        position: relative;
         background-color: #fff;
+        bottom: 551px; 
+        left: 36%;
         color:#C0CCFF;
         border: none;
         padding: 10px 20px;
@@ -450,17 +453,20 @@
     }
 
     /* User information styles */
-    #user-info p {
+    #user-info .inputContainer {
         position: absolute;
         font-size: 30px;
         color: #000;
         font-weight: bold;
         text-align: center;
-        top: 165px;
-        margin-left: 40px;
+        top: 190px;
+        margin-left: -82px;
         line-height: 36.9px;
         font-family: Libre Caslon Text;
-        
+        outline: none;
+        border: none;
+        box-shadow: none;
+        width: 50%;
     }
     #gg{
         

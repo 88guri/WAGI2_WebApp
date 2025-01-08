@@ -488,4 +488,10 @@
     padding: 10px;
     padding-left: 50px;
   }
+
+  .authority.chairman {
+    background-color: #575f92;
+    color: #ffffff;           
+  }
+
 }
